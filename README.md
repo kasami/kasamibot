@@ -1,6 +1,6 @@
-# KasamiBot - v0.9.0
+# KasamiBot - Autonomous Screeps bot
 
-**Current Release: Beta than before - version 0.9.0**
+**Current Release: Beta than before - version 0.9.1**
 
 ---
 
