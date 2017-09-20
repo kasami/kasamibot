@@ -1,5 +1,6 @@
 {
     "name": "screeps-bot-kasamibot",
+    "description": "A bot for the MMO RPG game Screeps, where you program your own AI.",
     "version": "0.9.0",
     "main": "dist/main.js",
     "screeps_bot": true,
@@ -7,6 +8,7 @@
         "type": "git",
         "url": "git://github.com/kasami/kasamibot.git"
     },
+    "homepage": "https://kasami.github.io/kasamibot/",
     "bugs": {
         "url": "https://github.com/kasami/kasamibot/issues"
     },

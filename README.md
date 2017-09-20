@@ -4,11 +4,19 @@
 
 ---
 
+## Install the bot:
+
+* [Steam Workshop](http://store.steampowered.com/app/464350/Screeps/)
+* [npm i screeps-bot-kasamibot](https://www.npmjs.com/package/screeps-bot-kasamibot)
+* [Download zip and use the files in dist-folder](https://github.com/kasami/kasamibot/archive/master.zip)
+
+---
+
 ## What is Screeps?
 Screeps is an open source MMO RTS game for programmers, where your mission is to code an AI. There is an official server hosted by the developers, and there are multiple open private servers. You can also run a server locally. To learn more, [visit screeps.com](https://screeps.com/) or [the steam page](http://store.steampowered.com/app/464350/Screeps/).
 
 ## What is KasamiBot?
-KasamiBot is an codebase used by me (Kasami) on the public server, but customized for automation to be used as an opponent on private servers. It has a lot of features, and will be quite hard to compete with for new players, so you can customize the difficulty in the config.js-file. It allows you to set the bot as passive, meaning it will not attack your rooms; and slow, meaning it will use less of the advanced features included in the bot.
+KasamiBot is a code base used by me (Kasami) on the public server, but customized for automation to be used as an opponent on private servers. It has a lot of features, and will be quite hard to compete with for new players, so you can customize the difficulty in the config.js-file. It allows you to set the bot as passive, meaning it will not attack your rooms; and slow, meaning it will use less of the advanced features included in the bot.
 
 The bot is distributed as an uglified version of the Typescript codebase I'm working on. This is not a community-driven codebase, but my personal screeps codebase, and I intend it to stay this way. However I wanted to be able to distribute it as a bot, and with javascript uglifying it was the closest thing I could get to compiling it.
 
@@ -20,6 +28,8 @@ If there are parts of the bot you are interested in learning more about, post an
 ---
 
 # KasamiBot Features
+
+---
 
 ## Building up a base
 
