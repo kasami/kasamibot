@@ -6,7 +6,7 @@
 
 ## Install the bot:
 
-* [Steam Workshop](http://store.steampowered.com/app/464350/Screeps/)
+* Steam Workshop - Coming
 * [npm i screeps-bot-kasamibot](https://www.npmjs.com/package/screeps-bot-kasamibot)
 * [Download zip and use the files in dist-folder](https://github.com/kasami/kasamibot/archive/master.zip)
 
@@ -28,8 +28,6 @@ If there are parts of the bot you are interested in learning more about, post an
 ---
 
 # KasamiBot Features
-
----
 
 ## Building up a base
 
