@@ -12,6 +12,37 @@
 
 ---
 
+## Plans for release 1.0
+* Better defense when under siege, and response from the room itself and neighbouring rooms
+* Improved AI for defending units when under siege
+* Civilian units should be better at avoiding hostile units while traveling, especially scouts, expansionworkers, claimers and pioneers.
+* Miners, haulers and reservers should avoid hostile units when escaping from Invaders
+* New unit for draining RCL 3+ rooms when we do not have boosts for attacking
+* Towers should be smarter, and avoid being drained
+* Use Observers fro scouting when reacing RCL 8
+* Use less CPU for parsing memory, by saving intel for rooms as stringified json
+* Handle the situation when a bad expansion is chosen, and the room is not able to build a spawn within 20000 ticks
+* Operation for guarding rooms owned by an enemy, but without spawns. This to prevent rebuilding.
+* Additional team for attacking rooms with ATTACK instead of the current WORK
+
+## Roadmap after release 1.0
+* Better AI for Bank-teams, being able to defend themselves
+* Faster and consistent boosting of units
+* Better response for invaders in portal room
+* More efficient wallbuilding, by splitting it up to repairers and haulers
+* New team for harassing enemy rooms, that targets all neighbouring rooms and try to kill civilian units
+* Long-term siege at enemy rooms, with longbows, drainers and wreckerteams
+* Nuke-defense
+* Offensive use of nukes
+* Pillage enemy rooms by stealing valuable resources
+* Better operation for guarding wanted outposts
+* Tracking CPU usage for better deciding on how capable we are of expanding
+* New room-type, fortress, that is used to limit CPU-usage
+* Better DistributionManager for lowering transfer-costs of energy
+* Better TradeManager for finding good deals on the market
+
+---
+
 ## What is Screeps?
 Screeps is an open source MMO RTS game for programmers, where your mission is to code an AI. There is an official server hosted by the developers, and there are multiple open private servers. You can also run a server locally. To learn more, [visit screeps.com](https://screeps.com/) or [the steam page](http://store.steampowered.com/app/464350/Screeps/).
 
