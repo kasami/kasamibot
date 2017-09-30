@@ -15,17 +15,17 @@
 ## Plans for release 1.0
 * Better defense when under siege, and response from the room itself and neighbouring rooms
 * Improved AI for defending units when under siege
-* Civilian units should be better at avoiding hostile units while traveling, especially scouts, expansionworkers, claimers and pioneers.
-* Miners, haulers and reservers should avoid hostile units when escaping from Invaders
+* ~Civilian units should be better at avoiding hostile units while traveling, especially scouts, expansionworkers, claimers and pioneers.~
+* ~Miners, haulers and reservers should avoid hostile units when escaping from Invaders~
 * New unit for draining RCL 3+ rooms when we do not have boosts for attacking
 * Towers should be smarter, and avoid being drained
 * Use Observers fro scouting when reacing RCL 8
-* Use less CPU for parsing memory, by saving intel for rooms as stringified json
-* Handle the situation when a bad expansion is chosen, and the room is not able to build a spawn within 20000 ticks
+* ~Use less CPU for parsing memory, by saving intel for rooms as stringified json~
+* ~Handle the situation when a bad expansion is chosen, and the room is not able to build a spawn within 20000 ticks~
 * Operation for guarding rooms owned by an enemy, but without spawns. This to prevent rebuilding.
-* Additional team for attacking rooms with ATTACK instead of the current WORK
 
 ## Roadmap after release 1.0
+* DestructionManager for intelligent attacks on hostile rooms
 * Better AI for Bank-teams, being able to defend themselves
 * Faster and consistent boosting of units
 * Better response for invaders in portal room
