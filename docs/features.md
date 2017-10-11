@@ -10,7 +10,7 @@ The bot uses a flexible layout, but with a core of 7x7 where it places the most 
 
 ![KasamiBot Butterfly](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/butterfly.png)
 
-> This is the primary design for a KasamiBot base, with two wings above the core for efficient refilling. It also shows the protector inside the core of the base, who makes sure the ramparts around the core and on the important buildings are being repaired, when energy reserves allows it.
+*This is the primary design for a KasamiBot base, with two wings above the core for efficient refilling. It also shows the protector inside the core of the base, who makes sure the ramparts around the core and on the important buildings are being repaired, when energy reserves allows it.*
 
 It will build structures according to roomlevel, but prioritizes spawns and extensions when building new structures after upgrading the RCL. This means it will finish building 3 spawns and 60 extensions, before building additional labs or nuker. It will also periodically check if any buildings are missing, and rebuild these. The position of the base is calculated so that it has optimal space, but also optimal distance to the mineral, controller and sources in the room.
 
@@ -18,7 +18,7 @@ The extensions in a room is primarily built above the base core, next to the spa
 
 ![KasamiBot Base](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/base.png)
 
-> Here is a base in a tricky room, where the normal butterfly-layout do not work. It tries to make the wings as large as possible, then fills out with single extensions that do not block the movement. This allows for efficient refilling even in tricky rooms.
+*Here is a base in a tricky room, where the normal butterfly-layout do not work. It tries to make the wings as large as possible, then fills out with single extensions that do not block the movement. This allows for efficient refilling even in tricky rooms.*
 
 The roadnetwork is built up from the middle of the base core, and will build out to all sources in the owned room and outposts (reserved rooms and source keeper-rooms). It will plan the roads according to the finished base structure, so for the first few RCL-levels the road might seem longer than it needs to be. It periodically checks for new targets for the road network, and maintains a list of roads that needs repairing.
 
@@ -30,7 +30,7 @@ To keep the base running, refilling extensions is a vital part. Each room has a 
 
 ![Early KasamiBot Base](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/earlybase.png)
 
-> This room has gotten to RCL 3, where it has taken over and produces it's own units. As it does not have a storage yet, it uses a container until RCL 4. Extra upgraders are ordered when needed, when both the container in the base and by the controller is full.
+*This room has gotten to RCL 3, where it has taken over and produces it's own units. As it does not have a storage yet, it uses a container until RCL 4. Extra upgraders are ordered when needed, when both the container in the base and by the controller is full.*
 
 The other vital role for the base is the basecourier, which handles everything else. It transports resources other than energy around the base, like ghodium to the nuker, power to the power spawn and minerals to the labs. It is also responsible for supplying energy to the link inside the base and balancing resources in the storage and the terminal.
 
@@ -44,7 +44,7 @@ For the first two RCL-levels, the bot is using a simple and versatile unit calle
 
 ![KasamiBot Map Overview](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/map.png)
 
-> An example from the screepspl.us-server, where KasamiBot has spread out and remote mining both source keeper-rooms and normal rooms.
+*An example from the screepspl.us-server, where KasamiBot has spread out and remote mining both source keeper-rooms and normal rooms.*
 
 The pioneers will ship the energy themselves, but when dedicated miners, containerminers, are used, the bot will spawn dedicated haulers to ship the energy back to the base. First it will have haulers assigned to specific containers, but from RCL 7 it will start using the same pool of haulers for all the sources, allowing it to spawn fewer units.
 
@@ -56,7 +56,7 @@ Upgrading the rooms is first done by pioneers, but at RCL 3 it will start spawni
 
 ![KasamiBot Upgrading](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/upgrading.png)
 
-> The bot will focus on upgrading as much as possible up to RCL 8, when energy is available in storage. It orders multiple upgraders, and dedicated haulers.
+*The bot will focus on upgrading as much as possible up to RCL 8, when energy is available in storage. It orders multiple upgraders, and dedicated haulers.*
 
 If the room has a lot of stored energy, and still has not reached RCL 8, it will try to burn that energy by spawning additional upgraders and dedicated haulers for the upgraders. This will stop when it feels it has used enough of the stored energy.
 
@@ -66,7 +66,7 @@ It will harvest minerals both from all owned rooms from RCL 6, and any mined sou
 
 ![KasamiBot mining SK-room](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/skroom.png)
 
-> This is a source keeper room used as a mining outpost. It shows the dedicated duo responsible for killing off source keepers. The reason behind using a duo is that they are usually able to also take on invaders, which are quite common when all the sources are being mined fully.
+*This is a source keeper room used as a mining outpost. It shows the dedicated duo responsible for killing off source keepers. The reason behind using a duo is that they are usually able to also take on invaders, which are quite common when all the sources are being mined fully.*
 
 In addition to this, it will check if there is any source keeper-rooms or portal rooms nearby that is not mined by other players, and launch a special operation to mine any available minerals. It will consist of a guard for taking out any source keepers, as many mineralminers as the mineral can fit and dedicated haulers to ship the minerals back to base. This operation is done without roads, containers or other infrastructure.
 
