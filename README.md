@@ -18,20 +18,22 @@ I've decided to include the full source for the bot when version 1.0 is release.
 * New unit for draining RCL 3+ rooms when we do not have boosts for attacking
 * Use Observers fro scouting when reacing RCL 8
 
-## Roadmap after release 1.0
+## Plans for release 1.1 - The world might burn
+* DestructionManager for intelligent attacks on hostile rooms
+* Improved AI for defending units when under siege
+* Better AI for Bank-teams, being able to defend themselves
 * Better defense when under siege, and response from the room itself and neighbouring rooms
 * Operation for guarding rooms owned by an enemy, but without spawns. This to prevent rebuilding.
-* Improved AI for defending units when under siege
-* DestructionManager for intelligent attacks on hostile rooms
-* Better AI for Bank-teams, being able to defend themselves
 * Towers should be smarter, and avoid being drained
+* New team for harassing enemy rooms, that targets all neighbouring rooms and try to kill civilian units
+* Nuke-defense
+* Offensive use of nukes
+* Long-term siege at enemy rooms, with longbows, drainers and wreckerteams
+
+## Roadmap
 * Faster and consistent boosting of units
 * Better response for invaders in portal room
 * More efficient wallbuilding, by splitting it up to repairers and haulers
-* New team for harassing enemy rooms, that targets all neighbouring rooms and try to kill civilian units
-* Long-term siege at enemy rooms, with longbows, drainers and wreckerteams
-* Nuke-defense
-* Offensive use of nukes
 * Pillage enemy rooms by stealing valuable resources
 * Better operation for guarding wanted outposts
 * Tracking CPU usage for better deciding on how capable we are of expanding
