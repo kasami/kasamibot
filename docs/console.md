@@ -22,75 +22,75 @@ I try to make all console-commands available with with the command `help()`, but
 
 Commands to control the empire, basically use addOutpost and addExpansion when you want to expand.
 
-```setLogLevel(lvl: number)```
+``` setLogLevel(lvl: number) ```
 
 Sets log level 1-5, 1 is alert, 5 is debug. Default is 3. Not that much used, but lvl 5 will show all spawning
 
 ---
 
-```listFriends()```
+``` listFriends() ```
 
 Lists users tagged as friendly.
 
 ---
 
-```addFriend(name: string)```
+``` addFriend(name: string) ```
 
 Adds user to friendly-list.
 
 ---
 
-```removeFriend(name: string)```
+``` removeFriend(name: string) ```
 
 Removes user from friendly-list.
 
 ---
 
-```addOutpost(roomName: string, outpost: string)```
+``` addOutpost(roomName: string, outpost: string) ```
 
 Adds outpost to a room. Can be a normal room, source keeper-room or portal room. Can also be a highway if you want to mine a room on the other side.
 
-```removeOutpost(roomName: string, outpost: string)```
+``` removeOutpost(roomName: string, outpost: string) ```
 
 ---
 
 Remove outpost from a room.
 
-```addExpansion(roomName: string, expansion: string, ... route: string[])```
+``` addExpansion(roomName: string, expansion: string, ... route: string[]) ```
 
 Adds expansion to a room. See description for `route` below.
 
 ---
 
-```removeExpansion(roomName: string, expansion: string)```
+``` removeExpansion(roomName: string, expansion: string) ```
 
 Remove expansion from a room.
 
 ---
 
-```abandonRoom(roomName: string, destroyStructures?: boolean, saveEnergyBuildings?: boolean)```
+``` abandonRoom(roomName: string, destroyStructures?: boolean, saveEnergyBuildings?: boolean) ```
 
 Starts abandoning the room. Set `destroyStructures` to true to remove all structures, default is false. Set `saveEnergyBuildings` to true to not destroy storage and terminal, default is false.
 
-```dismantleOutpost(roomName: string, outpost: string)```
+``` dismantleOutpost(roomName: string, outpost: string) ```
 
 ---
 
 Captures room without building it, to clear buildings. You have to manually unclaim the room later.
 
-```mineralreport()```
+``` mineralreport() ```
 
 ---
 
 Report of minerals currently controlled/mined.
 
-```poachingreport()```
+``` poachingreport() ```
 
 ---
 
 Report of rooms currently being poached. Poaching is taking minerals SK-rooms and portalrooms without harvesting energy.
 
-```portalreport()```
+``` portalreport() ```
 
 Report of portals in the sectors you have rooms in (RCL8 rooms).
 
@@ -106,48 +106,48 @@ The example above will spawn expansion-units in room E1N1. They will travel to r
 
 The available units will be heavily modified in version 1.1, but is fully usable. Basically I only use boosted WreckerTeams and hauloperation to rooms I want to progress quickly.
 
-```orderDrainer(roomName: string, tier: number, ... route: string[])```
+``` orderDrainer(roomName: string, tier: number, ... route: string[]) ```
 
 Orders a Drainer for target room. Route can be multiple rooms, waiting to drain each one.
 
 ---
 
-```orderPaladin(roomName: string, ... route: string[])```
+``` orderPaladin(roomName: string, ... route: string[]) ```
 
 Orders a Paladin for target room. A paladin is a basic melee unit with healing, used to clean up simple rooms. Will order highest tier paladin the room can make.
 
 ---
 
-```orderWreckerTeam(roomName: string, tier: number, boosted: boolean, route: string[], ... targets: string[])```
+``` orderWreckerTeam(roomName: string, tier: number, boosted: boolean, route: string[], ... targets: string[]) ```
 
 Orders a WreckerTeam (Dismantler and Healer). Tier can be 1-3, and should not be higher than RCL. Boosted should be set to true, unboosted teams is not supported by manual code yet. Does not check if it has enough boosts.
 
 ---
 
-```orderWreckers(roomName: string, count: number, ... route: string[])```
+``` orderWreckers(roomName: string, count: number, ... route: string[]) ```
 
 Orders Wreckers (dismantlers) (1-5) for target room. Route can be multiple rooms.
 
 ---
 
-```orderTagger(roomName: string, targetRoom: string)```
+``` orderTagger(roomName: string, targetRoom: string) ```
 
 Orders a tagger that builds walls according to flags (Ayce and Pacman).
 
 ---
 
-```orderDeclarer(roomName: string, ... route: string[])```
+``` orderDeclarer(roomName: string, ... route: string[]) ```
 
 Orders a declarer that signs controller in the route.
 
 ---
 
-```addHaulOperation(from: string, to: string, energyPerTick: number, endlevel: number)```
+``` addHaulOperation(from: string, to: string, energyPerTick: number, endlevel: number) ```
 
 Starts an operation to move energy from one room to another. Both rooms needs to have a storage.
 
 ---
 
-```addDrainOperation(spawnRoom: string, targetRoom: string, targetRoute: string[], tier: number)```
+``` addDrainOperation(spawnRoom: string, targetRoom: string, targetRoute: string[], tier: number) ```
 
 Starts an operation to drain a room for energy, stops when the target room is empty.
