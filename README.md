@@ -2,6 +2,8 @@
 
 **Current Release: Beta than before - version 0.9.1**
 
+I've decided to include the full source for the bot when version 1.0 is release. I might also update the license for to allow forks and further development. I will not be accepting pull requests, as the development is done in a separate branch to allow me to stay ahead and add features not yet available to the bot.
+
 ---
 
 ## Install the bot:
