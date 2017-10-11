@@ -6,7 +6,7 @@
 *  | . \ (_| \__ \ (_| | | | | | | | |_) | (_) | |_   *
 *  |_|\_\__,_|___/\__,_|_| |_| |_|_|____/ \___/ \__|  *
 *                                                     *
-*                   Version 0.9.0                     *
+*                   Version 1.0.0                     *
 *                                                     *
 * This is a bot developed for the game Screeps.       *
 *                                                     *
@@ -17,7 +17,8 @@
 * http://kasami.github.io/kasamibot                   *
 *                                                     *
 * Version history:                                    *
-* 0.9.0 - Beta release                                *
+* 1.0 - Cake and grief counseling                     *
+* 0.9 - Beta than before                              *
 *                                                     *
 \* * * * * * * * * * * * * * * * * * * * * * * * * * */
 
