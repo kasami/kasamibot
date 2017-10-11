@@ -14,7 +14,7 @@ I've decided to include the full source for the bot when version 1.0 is release.
 
 ---
 
-## Remaining for release 1.0
+## Remaining for release 1.0 - Cake and grief counseling
 * New unit for draining RCL 3+ rooms when we do not have boosts for attacking
 * Use Observers fro scouting when reacing RCL 8
 
