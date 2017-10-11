@@ -106,7 +106,7 @@ The rooms are defended by two different walls, the borderwall along the border, 
 
 ## Attacking other players
 
-The bot has a range of military units at it's disposal, but typically it will use either a ranger with ranged attack and heal, or a wreckerteam with on unit with work and ranged attack and another with heal.
+The bot has a range of military units at it's disposal, but typically it will use either a ranger with ranged attack and heal, or a wreckerteam with one unit with work and ranged attack and another with heal.
 
 When the bot is not set to passive, it will sometimes decide that a room can launch an attack on rooms around it. It will only try to attack hostile owned or reserved rooms, and only owned rooms it thinks it has enough boosts to take down. This will typicall be a boosted wreckerteam that focuses on taking down important structures in the room.
 
