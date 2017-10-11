@@ -1,4 +1,6 @@
-[Home](index.md) | [Features](features.md) | [Patchnotes](patchnotes.md) | [Manual control](console.md)
+[Home](index.md) - [Features](features.md) - [Patchnotes](patchnotes.md) - [Manual control](console.md)
+
+---
 
 # Patchnotes
 

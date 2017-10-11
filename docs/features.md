@@ -1,16 +1,24 @@
-[Home](index.md) | [Features](features.md) | [Patchnotes](patchnotes.md) | [Manual control](console.md)
+[Home](index.md) - [Features](features.md) - [Patchnotes](patchnotes.md) - [Manual control](console.md)
 
-# Features of KasamiBot
+---
 
-I will be going more into detail here later.
+# Features
 
 ## Building up a base
 
 The bot uses a flexible layout, but with a core of 7x7 where it places the most of the structures except extensions. This allows it to expand to most rooms, and plan the layout of the room according to the free space. For the first room after spawning it will decide on the best position for the spawn and move it after it has built a storage and is confident it has enough builders and energy to successfully rebuild the spawn.
 
+![KasamiBot Butterfly](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/butterfly.png)
+
+> This is the primary design for a KasamiBot base, with two wings above the core for efficient refilling. It also shows the protector inside the core of the base, who makes sure the ramparts around the core and on the important buildings are being repaired, when energy reserves allows it.
+
 It will build structures according to roomlevel, but prioritizes spawns and extensions when building new structures after upgrading the RCL. This means it will finish building 3 spawns and 60 extensions, before building additional labs or nuker. It will also periodically check if any buildings are missing, and rebuild these. The position of the base is calculated so that it has optimal space, but also optimal distance to the mineral, controller and sources in the room.
 
 The extensions in a room is primarily built above the base core, next to the spawns, but if the room does not allow for that it will build corridors with extensions along the sides. If it still can't place all extensions, it will place them individually around the base and at the same time make sure it doesn't block access.
+
+![KasamiBot Base](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/base.png)
+
+> Here is a base in a tricky room, where the normal butterfly-layout do not work. It tries to make the wings as large as possible, then fills out with single extensions that do not block the movement. This allows for efficient refilling even in tricky rooms.
 
 The roadnetwork is built up from the middle of the base core, and will build out to all sources in the owned room and outposts (reserved rooms and source keeper-rooms). It will plan the roads according to the finished base structure, so for the first few RCL-levels the road might seem longer than it needs to be. It periodically checks for new targets for the road network, and maintains a list of roads that needs repairing.
 
@@ -19,6 +27,10 @@ The roadnetwork is built up from the middle of the base core, and will build out
 Each own room maintains it's own queue for spawning creeps. The spawns themselves do not check for what creeps are needed, other modules of the code places orders that the spawns then process. Each order contains the needed information for spawning the creep, and a priority telling the spawn-manager how urgent the order is.
 
 To keep the base running, refilling extensions is a vital part. Each room has a special creep called basehauler that is responsible for this, placed between the three spawns (at RCL 8) when it is idle. The basehauler will also provide energy to other structures like towers, nuker and power spawn when that is needed.
+
+![Early KasamiBot Base](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/earlybase.png)
+
+> This room has gotten to RCL 3, where it has taken over and produces it's own units. As it does not have a storage yet, it uses a container until RCL 4. Extra upgraders are ordered when needed, when both the container in the base and by the controller is full.
 
 The other vital role for the base is the basecourier, which handles everything else. It transports resources other than energy around the base, like ghodium to the nuker, power to the power spawn and minerals to the labs. It is also responsible for supplying energy to the link inside the base and balancing resources in the storage and the terminal.
 
@@ -30,6 +42,10 @@ Inside the owned room, we have basebuilders that are responsible for building. T
 
 For the first two RCL-levels, the bot is using a simple and versatile unit called pioneer for both harvesting energy, supplying extensions and spawn, construction and upgrading. When we hit RCL 3, it will start constructing dedicated miners that drop energy into containers. The miners themselves will build and repair the containers they are working on. At RCL 7 it will start to overfit the dedicated miners, allowing the to mine out the sources quicker to save CPU.
 
+![KasamiBot Map Overview](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/map.png)
+
+> An example from the screepspl.us-server, where KasamiBot has spread out and remote mining both source keeper-rooms and normal rooms.
+
 The pioneers will ship the energy themselves, but when dedicated miners, containerminers, are used, the bot will spawn dedicated haulers to ship the energy back to the base. First it will have haulers assigned to specific containers, but from RCL 7 it will start using the same pool of haulers for all the sources, allowing it to spawn fewer units.
 
 Already at RCL 2 the bot will start mining for other rooms, typically two other rooms. At RCL 7 it will add two more, and another two at RCL 8, totally six reserved rooms. If it is next to a source keeper-room, it might decide to mine from that instead of two normal rooms. It will choose outposts based on distance to the sources and amount of sources.
@@ -38,11 +54,19 @@ Already at RCL 2 the bot will start mining for other rooms, typically two other 
 
 Upgrading the rooms is first done by pioneers, but at RCL 3 it will start spawning dedicated upgraders based on how much energy it has access to. At RCL 5 it will start using links to provide the upgraders with energy, and at RCL 8 it will only upgrade with 15 WORK parts. The upgraders will be boosted if the rooms has enough T3 boost-mineral.
 
+![KasamiBot Upgrading](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/upgrading.png)
+
+> The bot will focus on upgrading as much as possible up to RCL 8, when energy is available in storage. It orders multiple upgraders, and dedicated haulers.
+
 If the room has a lot of stored energy, and still has not reached RCL 8, it will try to burn that energy by spawning additional upgraders and dedicated haulers for the upgraders. This will stop when it feels it has used enough of the stored energy.
 
 ## Harvesting minerals
 
 It will harvest minerals both from all owned rooms from RCL 6, and any mined source keeper-rooms from RCL 7. The minerals will be dropped into a container and shipped back to base by a dedicated hauler.
+
+![KasamiBot mining SK-room](https://raw.githubusercontent.com/kasami/kasamibot/master/docs/images/skroom.png)
+
+> This is a source keeper room used as a mining outpost. It shows the dedicated duo responsible for killing off source keepers. The reason behind using a duo is that they are usually able to also take on invaders, which are quite common when all the sources are being mined fully.
 
 In addition to this, it will check if there is any source keeper-rooms or portal rooms nearby that is not mined by other players, and launch a special operation to mine any available minerals. It will consist of a guard for taking out any source keepers, as many mineralminers as the mineral can fit and dedicated haulers to ship the minerals back to base. This operation is done without roads, containers or other infrastructure.
 

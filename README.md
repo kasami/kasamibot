@@ -1,8 +1,8 @@
 # KasamiBot - Autonomous Screeps bot
 
-**Current Release: Beta than before - version 0.9.1**
+**Current Release: Cake and grief counseling - version 1.0**
 
-I've decided to include the full source for the bot when version 1.0 is release. I might also update the license for to allow forks and further development. I will not be accepting pull requests, as the development is done in a separate branch to allow me to stay ahead and add features not yet available to the bot.
+Read more about KasamiBot on the Github pages: [Documentation](https://kasami.github.io/kasamibot/) and [features](https://kasami.github.io/kasamibot/features.html)
 
 ---
 
@@ -14,11 +14,8 @@ I've decided to include the full source for the bot when version 1.0 is release.
 
 ---
 
-## Remaining for release 1.0 - Cake and grief counseling
-* New unit for draining RCL 3+ rooms when we do not have boosts for attacking
-* Use Observers for scouting when reacing RCL 8
-
 ## Plans for release 1.1 - The world might burn
+* Use Observers for scouting when reacing RCL 8
 * DestructionManager for intelligent attacks on hostile rooms
 * Improved AI for defending units when under siege
 * Better AI for Bank-teams, being able to defend themselves
@@ -31,6 +28,7 @@ I've decided to include the full source for the bot when version 1.0 is release.
 * Long-term siege at enemy rooms, with longbows, drainers and wreckerteams
 
 ## Roadmap
+* Use Observers for scouting when reacing RCL 8
 * Faster and consistent boosting of units
 * Better response for invaders in portal room
 * More efficient wallbuilding, by splitting it up to repairers and haulers
