@@ -1,1 +1,5 @@
+/ts-source/dist
+/ts-source/node_modules
+/ts-source/config.json
+
 npm-debug.log

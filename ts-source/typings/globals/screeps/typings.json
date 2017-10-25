@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/screepers/Screeps-Typescript-Declarations/TS2/dist/screeps.d.ts",
+    "raw": "github:screepers/Screeps-Typescript-Declarations/dist/screeps.d.ts#TS2",
+    "typings": "https://raw.githubusercontent.com/screepers/Screeps-Typescript-Declarations/TS2/dist/screeps.d.ts"
+  }
+}

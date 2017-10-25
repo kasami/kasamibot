@@ -1,0 +1,33 @@
+{
+  "user": {
+    "email": "YOUR_USERNAME",
+    "password": "YOUR_PASSWORD"
+  },
+  "defaultTarget": "dev",
+  "targets": {
+    "dev": {
+      "branch": "default",
+      "bundle": false,
+      "lint": true,
+      "lintRequired": false
+    },
+    "ptr": {
+      "branch": "default",
+      "bundle": false,
+      "lint": true,
+      "lintRequired": false
+    },
+    "bot": {
+      "branch": "KasamiBot",
+      "bundle": true,
+      "lint": true,
+      "lintRequired": false
+    },
+    "local": {
+      "bundle": true,
+      "lint": true,
+      "lintRequired": false,
+      "localPath": "ting"
+    }
+  }
+}
