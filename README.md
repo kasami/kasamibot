@@ -1,5 +1,7 @@
 # KasamiBot - Autonomous Screeps bot
 
+The releases of KasamiBot has been discontinued. It will be released in a new format in the future. Read about it [here](https://screeps.com/forum/topic/2000/on-the-topic-of-open-source-code-bases).
+
 **Current Release: Cake and grief counseling - version 1.0**
 
 Read more about KasamiBot on the Github pages:
