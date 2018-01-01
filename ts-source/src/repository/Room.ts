@@ -96,7 +96,8 @@ export function getAllPoachroomsInAllRooms(rooms: Room[]): string[] {
 
 export function getNumberOfSourcesMined(room: Room): number {
     let sourceCount = (room.find(FIND_SOURCES) as Source[]).length;
-    for (let outpost of room.memory.outposts) {
+
+    for (let outpost of getAllOutposts(room)) {
         if (IntelLib.hasIntel(outpost)) {
             sourceCount += IntelLib.sourceIds(outpost).length;
         }
