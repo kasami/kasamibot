@@ -4,15 +4,11 @@
 
 # About KasamiBot
 
-**Current Release: Cake and grief counseling - version 1.0**
+The releases of KasamiBot has been discontinued. It might be released in a new format in the future. Read about it [here](https://screeps.com/forum/topic/2000/on-the-topic-of-open-source-code-bases).
+
+**Last Release: Cake and grief counseling - version 1.0**
 
 ---
-
-## Install the bot: 
-
-* [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1139264355)
-* [npm i screeps-bot-kasamibot](https://www.npmjs.com/package/screeps-bot-kasamibot)
-* [Download zip and use the files in dist-folder](https://github.com/kasami/kasamibot/archive/master.zip)
 
 ---
 
